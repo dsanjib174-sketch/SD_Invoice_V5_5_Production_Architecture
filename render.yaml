@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sd-invoice-v55-production
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn run:app
+    envVars:
+      - key: SECRET_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false

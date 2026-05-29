@@ -1,0 +1,8 @@
+body{font-family:Arial, sans-serif}
+.invoice{max-width:1120px;margin:20px auto}
+.invoice h2{text-align:center;border:1px solid #555;margin:0;padding:5px}
+.invoice table{width:100%;border-collapse:collapse}
+.invoice th,.invoice td{border:1px solid #555;padding:6px;font-size:13px;vertical-align:top}
+.invoice th{background:#eef3f8}
+.invoice-logo{max-width:90px;vertical-align:middle;margin-right:10px}
+@media print{.invoice{margin:0;max-width:none}}
